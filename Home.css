@@ -1,0 +1,74 @@
+#order_button{
+    margin-left: auto; 
+    margin-right:auto; 
+    display:block;
+    padding: 10px;
+    background-color: aqua;
+    font-size: 30;
+    font-style: italic;
+    font-family: 'Times New Roman', bold;
+  }
+  #order_button:hover{
+      background-color: rgb(102, 252, 252);
+      color: #050801;
+      box-shadow:
+        0 0 5px #45eb45,
+        0 0 25px #45eb45,
+        0 0 50px #45eb45,
+        0 0 200px #45eb45;
+      transform: rotateY('180deg');
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px 5px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
